@@ -62,9 +62,12 @@
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
-  color: var(--default-color);
-  background-color: var(--background-color);
- font-family: 'Cairo', sans-serif;
+  color: black;
+  background: url("../img/hero-bg.png") center center no-repeat;
+  background-size: cover; /* تجعل الصورة تغطي الخلفية بالكامل */
+  background-color: rgba(0, 0, 0, 0.5); /* أسود مع شفافية 50% */
+  padding: 60px 0;
+  font-family: 'Cairo', sans-serif;
 }
 
 a {
@@ -84,7 +87,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  color:black;
   font-family: 'Cairo', sans-serif;
 }
 
@@ -223,7 +226,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  color: var(--default-color);
+  color: black;
   background-color: var(--background-color);
   padding: 0px 0;
   transition: all 0.5s;
@@ -243,7 +246,7 @@ h6 {
   font-size: 32px;
   font-weight: 300;
   margin: 0;
-  color: var(--heading-color);
+  color:black;
 }
 
 .header .logo span {
@@ -312,7 +315,7 @@ h6 {
   }
 
   .navmenu>ul>li {
-    white-space: nowrap;
+    black-space: nowrap;
     padding: 15px 14px;
   }
 
@@ -330,7 +333,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    white-space: nowrap;
+    black-space: nowrap;
     transition: 0.3s;
     position: relative;
   }
@@ -451,7 +454,7 @@ h6 {
     margin: 0;
     border-radius: 6px;
     background-color: var(--nav-mobile-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    border: 1px solid color-mix(in srgb, black, transparent 90%);
     box-shadow: none;
     overflow-y: auto;
     transition: 0.3s;
@@ -468,7 +471,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    white-space: nowrap;
+    black-space: nowrap;
     transition: 0.3s;
   }
 
@@ -556,14 +559,14 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
+  color: black;
   background-color: var(--background-color);
   font-size: 14px;
   position: relative;
 }
 
 .footer .footer-top {
-  background-color: color-mix(in srgb, var(--background-color), white 5%);
+  background-color: color-mix(in srgb, var(--background-color), black 5%);
   padding-top: 50px;
 }
 
@@ -578,7 +581,7 @@ h6 {
 }
 
 .footer .footer-about .logo span {
-  color: var(--heading-color);
+  color:black;
   font-family: 'Cairo', sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -636,7 +639,7 @@ h6 {
 }
 
 .footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, black, transparent 30%);
   display: inline-block;
   line-height: 1;
 }
@@ -665,7 +668,7 @@ h6 {
 .footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  background: color-mix(in srgb, black, transparent 90%);
   color: var(--contrast-color);
   line-height: 1;
   padding: 8px 0;
@@ -773,8 +776,8 @@ h6 {
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
-  --background-color: color-mix(in srgb, var(--default-color), transparent 96%);
-  color: var(--default-color);
+  --background-color: color-mix(in srgb, black, transparent 96%);
+  color: black;
   background-color: var(--background-color);
   padding: 25px 0;
   position: relative;
@@ -802,7 +805,7 @@ h6 {
   content: "/";
   display: inline-block;
   padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: color-mix(in srgb, black, transparent 70%);
 }
 
 /*--------------------------------------------------------------
@@ -810,8 +813,8 @@ h6 {
 --------------------------------------------------------------*/
 section,
 .section {
-  color: var(--default-color);
-  /* background: url("../img/hero-bg.png") center center;  padding: 60px 0; */
+  color: black;
+ 
   background-size: cover;
    scroll-margin-top: 100px;
   overflow: clip;
@@ -869,7 +872,7 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, black, transparent 30%);
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
@@ -897,7 +900,7 @@ section,
   font-size: 16px;
   transition: 0.5s;
   margin-left: 25px;
-  color: var(--default-color);
+  color: black;
   font-weight: 500;
 }
 
@@ -995,7 +998,7 @@ section,
 }
 
 .featured-services .service-item h4 a {
-  color: var(--heading-color);
+  color:black;
   transition: ease-in-out 0.3s;
 }
 
@@ -1060,7 +1063,7 @@ section,
 }
 
 .about .nav-pills {
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-bottom: 1px solid color-mix(in srgb, black, transparent 85%);
 }
 
 .about .nav-pills li+li {
@@ -1071,7 +1074,7 @@ section,
   background: none;
   font-size: 18px;
   font-weight: 400;
-  color: var(--default-color);
+  color: black;
   padding: 12px 0;
   margin-bottom: -2px;
   border-radius: 0;
@@ -1093,7 +1096,7 @@ section,
   font-size: 18px;
   margin: 0;
   font-weight: 700;
-  color: var(--default-color);
+  color: black;
 }
 
 .about .tab-content i {
@@ -1145,7 +1148,7 @@ section,
 
 .call-to-action .container {
   padding: 80px;
-  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  background: color-mix(in srgb, black, transparent 96%);
   border-radius: 15px;
 }
 
@@ -1178,7 +1181,7 @@ section,
 }
 
 .call-to-action .content p {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, black, transparent 20%);
   font-weight: 400;
   font-size: 18px;
 }
@@ -1217,7 +1220,7 @@ section,
   content: "";
   position: absolute;
   inset: 0;
-  background: color-mix(in srgb, var(--default-color), transparent 95%);
+  background: color-mix(in srgb, black, transparent 95%);
   border-radius: 15px;
   transform: rotate(12deg);
   z-index: 1;
@@ -1263,6 +1266,7 @@ section,
 .onfocus .content ul {
   list-style: none;
   padding: 0;
+  color: white;
 }
 
 .onfocus .content ul li {
@@ -1416,7 +1420,7 @@ section,
 }
 
 .services .details {
-  background: color-mix(in srgb, var(--surface-color), transparent 5%);
+  background: rgba(0, 0, 100, 0.5);
   padding: 50px 30px;
   margin: -100px 30px 0 30px;
   transition: all ease-in-out 0.3s;
@@ -1453,7 +1457,7 @@ section,
 }
 
 .services .details p {
-  color: color-mix(in srgb, var(--default-color), transparent 10%);
+  color: color-mix(in srgb, black, transparent 10%);
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
@@ -1519,7 +1523,7 @@ section,
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
   border-radius: 50%;
-  border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border: 6px solid color-mix(in srgb, black, transparent 85%);
   margin: 0 auto;
 }
 
@@ -1532,7 +1536,7 @@ section,
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   margin: 0 0 15px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
 }
 
 .testimonials .testimonial-item .stars {
@@ -1546,7 +1550,7 @@ section,
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
   font-size: 26px;
   line-height: 0;
 }
@@ -1582,12 +1586,12 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 50%);
+  background-color: color-mix(in srgb, black, transparent 50%);
   opacity: 0.5;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--default-color);
+  background-color: black;
   opacity: 1;
 }
 
@@ -1607,7 +1611,7 @@ section,
   height: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border: 1px solid color-mix(in srgb, black, transparent 90%);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -1646,7 +1650,7 @@ section,
 .pricing ul {
   padding: 30px 0;
   list-style: none;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, black, transparent 30%);
   text-align: left;
   line-height: 20px;
 }
@@ -1665,11 +1669,11 @@ section,
 }
 
 .pricing ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  color: color-mix(in srgb, black, transparent 60%);
 }
 
 .pricing ul .na i {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  color: color-mix(in srgb, black, transparent 60%);
   font-size: 24px;
   padding-left: 4px;
 }
@@ -1682,12 +1686,12 @@ section,
   display: inline-block;
   padding: 12px 40px;
   border-radius: 6px;
-  color: var(--default-color);
+  color: black;
   transition: none;
   font-size: 16px;
   font-weight: 500;
   transition: 0.3s;
-  border: 1px solid var(--default-color);
+  border: 1px solid black;
 }
 
 .pricing .buy-btn:hover {
@@ -1719,7 +1723,7 @@ section,
 }
 
 .faq .content p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, black, transparent 30%);
 }
 
 .faq .faq-container {
@@ -1991,14 +1995,14 @@ section,
   display: block;
   font-size: 16px;
   font-weight: 400;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, black, transparent 30%);
 }
 
 .team .team-member .member-info p {
  
   font-size: 14px;
   line-height: 26px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, black, transparent 30%);
 }
 
 .team .team-member:hover .social {
@@ -2025,7 +2029,7 @@ section,
 
 .recent-posts .post-category {
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, black, transparent 50%);
   margin-bottom: 10px;
 }
 
@@ -2037,7 +2041,7 @@ section,
 }
 
 .recent-posts .title a {
-  color: var(--heading-color);
+  color:black;
   transition: 0.3s;
 }
 
@@ -2058,7 +2062,7 @@ section,
 
 .recent-posts .post-date {
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, black, transparent 50%);
   margin-bottom: 0;
 }
 
@@ -2078,7 +2082,7 @@ section,
 }
 
 .contact .info p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
   margin-bottom: 30px;
   font-size: 15px;
 }
@@ -2086,7 +2090,7 @@ section,
 .contact .info-item+.info-item {
   padding-top: 20px;
   margin-top: 20px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, black, transparent 90%);
 }
 
 .contact .info-item i {
@@ -2107,7 +2111,7 @@ section,
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
 }
 
 .contact .php-email-form {
@@ -2125,7 +2129,7 @@ section,
   box-shadow: none;
   font-size: 14px;
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  border-color: color-mix(in srgb, black, transparent 80%);
 }
 
 .contact .php-email-form input[type=text]:focus,
@@ -2210,7 +2214,7 @@ section,
 .portfolio-details .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  background-color: color-mix(in srgb, black, transparent 85%);
   opacity: 1;
 }
 
@@ -2252,7 +2256,7 @@ section,
 .portfolio-details .portfolio-info ul strong {
   text-transform: uppercase;
   font-weight: 400;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, black, transparent 50%);
   font-size: 14px;
 }
 
@@ -2281,7 +2285,7 @@ section,
 .portfolio-details .portfolio-description .testimonial-item {
   padding: 30px 30px 0 30px;
   position: relative;
-  background: color-mix(in srgb, var(--default-color), transparent 97%);
+  background: color-mix(in srgb, black, transparent 97%);
   margin-bottom: 50px;
 }
 
@@ -2339,7 +2343,7 @@ section,
 .service-details .services-list {
   background-color: var(--surface-color);
   padding: 10px 30px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border: 1px solid color-mix(in srgb, black, transparent 90%);
   margin-bottom: 20px;
 }
 
@@ -2347,14 +2351,14 @@ section,
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  border-left: 3px solid color-mix(in srgb, black, transparent 70%);
   margin: 20px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, black, transparent 20%);
   transition: 0.3s;
 }
 
 .service-details .services-list a.active {
-  color: var(--heading-color);
+  color:black;
   font-weight: 700;
   border-color: var(--accent-color);
 }
@@ -2403,7 +2407,7 @@ section,
 # Blog Posts Section
 --------------------------------------------------------------*/
 .blog-posts article {
-  background-color: var(--surface-color);
+  background: rgba(0, 0, 100, 0.5);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 30px;
   height: 100%;
@@ -2419,7 +2423,7 @@ section,
 
 .blog-posts .post-category {
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
   margin-bottom: 10px;
 }
 
@@ -2431,7 +2435,7 @@ section,
 }
 
 .blog-posts .title a {
-  color: var(--heading-color);
+  color:black;
   transition: 0.3s;
 }
 
@@ -2452,7 +2456,7 @@ section,
 
 .blog-posts .post-date {
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
   margin-bottom: 0;
 }
 
@@ -2461,7 +2465,7 @@ section,
 --------------------------------------------------------------*/
 .blog-pagination {
   padding-top: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
 }
 
 .blog-pagination ul {
@@ -2477,7 +2481,7 @@ section,
 }
 
 .blog-pagination li a {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
   padding: 7px 16px;
   display: flex;
   align-items: center;
@@ -2514,7 +2518,7 @@ section,
 }
 
 .blog-details .title {
-  color: var(--heading-color);
+  color:black;
   font-size: 28px;
   font-weight: 700;
   padding: 0;
@@ -2533,7 +2537,7 @@ section,
 
 .blog-details .content blockquote {
   overflow: hidden;
-  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+  background-color: color-mix(in srgb, black, transparent 95%);
   padding: 60px;
   position: relative;
   text-align: center;
@@ -2541,7 +2545,7 @@ section,
 }
 
 .blog-details .content blockquote p {
-  color: var(--default-color);
+  color: black;
   line-height: 1.6;
   margin-bottom: 0;
  
@@ -2563,7 +2567,7 @@ section,
 
 .blog-details .meta-top {
   margin-top: 20px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
 }
 
 .blog-details .meta-top ul {
@@ -2583,11 +2587,11 @@ section,
   font-size: 16px;
   margin-right: 8px;
   line-height: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
 }
 
 .blog-details .meta-top a {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
   font-size: 14px;
   display: inline-block;
   line-height: 1;
@@ -2595,16 +2599,16 @@ section,
 
 .blog-details .meta-bottom {
   padding-top: 10px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, black, transparent 90%);
 }
 
 .blog-details .meta-bottom i {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
   display: inline;
 }
 
 .blog-details .meta-bottom a {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
   transition: 0.3s;
 }
 
@@ -2636,7 +2640,7 @@ section,
 
 .blog-details .meta-bottom .tags li+li::before {
   padding-right: 6px;
-  color: var(--default-color);
+  color: black;
   content: ",";
 }
 
@@ -2671,7 +2675,7 @@ section,
   font-size: 20px;
   margin-bottom: 0px;
   padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, black, transparent 20%);
 }
 
 .blog-author .social-links {
@@ -2679,13 +2683,13 @@ section,
 }
 
 .blog-author .social-links a {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  color: color-mix(in srgb, black, transparent 60%);
   margin-right: 5px;
 }
 
 .blog-author p {
  
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, black, transparent 30%);
   margin-bottom: 0;
 }
 
@@ -2720,7 +2724,7 @@ section,
 
 .blog-comments .comment h5 a {
   font-weight: bold;
-  color: var(--default-color);
+  color: black;
   transition: 0.3s;
 }
 
@@ -2730,7 +2734,7 @@ section,
 
 .blog-comments .comment h5 .reply {
   padding-left: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, black, transparent 20%);
 }
 
 .blog-comments .comment h5 .reply i {
@@ -2740,7 +2744,7 @@ section,
 .blog-comments .comment time {
   display: block;
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, black, transparent 40%);
   margin-bottom: 5px;
 }
 
@@ -2773,28 +2777,28 @@ section,
 
 .comment-form form input {
   background-color: var(--surface-color);
-  color: var(--default-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  color: black;
+  border: 1px solid color-mix(in srgb, black, transparent 70%);
   font-size: 14px;
   border-radius: 4px;
   padding: 10px 10px;
 }
 
 .comment-form form input:focus {
-  color: var(--default-color);
+  color: black;
   background-color: var(--surface-color);
   box-shadow: none;
   border-color: var(--accent-color);
 }
 
 .comment-form form input::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, black, transparent 50%);
 }
 
 .comment-form form textarea {
   background-color: var(--surface-color);
-  color: var(--default-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  color: black;
+  border: 1px solid color-mix(in srgb, black, transparent 70%);
   border-radius: 4px;
   padding: 10px 10px;
   font-size: 14px;
@@ -2802,14 +2806,14 @@ section,
 }
 
 .comment-form form textarea:focus {
-  color: var(--default-color);
+  color: black;
   box-shadow: none;
   border-color: var(--accent-color);
   background-color: var(--surface-color);
 }
 
 .comment-form form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, black, transparent 50%);
 }
 
 .comment-form form .form-group {
@@ -2847,7 +2851,7 @@ section,
 }
 
 .widget-title {
-  color: var(--heading-color);
+  color:black;
   font-size: 20px;
   font-weight: 700;
   padding: 0;
@@ -2864,7 +2868,7 @@ section,
 
 .search-widget form {
   background: var(--background-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  border: 1px solid color-mix(in srgb, black, transparent 70%);
   padding: 3px 10px;
   position: relative;
   transition: 0.3s;
@@ -2876,7 +2880,7 @@ section,
   border-radius: 4px;
   width: calc(100% - 40px);
   background-color: var(--background-color);
-  color: var(--default-color);
+  color: black;
 }
 
 .search-widget form input[type=text]:focus {
@@ -2926,7 +2930,7 @@ section,
 }
 
 .categories-widget ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, black, transparent 20%);
   transition: 0.3s;
 }
 
@@ -2936,7 +2940,7 @@ section,
 
 .categories-widget ul a span {
   padding-left: 5px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, black, transparent 50%);
   font-size: 14px;
 }
 
@@ -2961,7 +2965,7 @@ section,
 }
 
 .recent-posts-widget .post-item h4 a {
-  color: var(--default-color);
+  color: black;
   transition: 0.3s;
 }
 
@@ -2973,7 +2977,7 @@ section,
   display: block;
  
   font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, black, transparent 50%);
 }
 
 .tags-widget {
@@ -2991,11 +2995,11 @@ section,
 }
 
 .tags-widget ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, black, transparent 30%);
   font-size: 14px;
   padding: 6px 14px;
   margin: 0 6px 8px 0;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 60%);
+  border: 1px solid color-mix(in srgb, black, transparent 60%);
   display: inline-block;
   transition: 0.3s;
 }
@@ -3008,7 +3012,7 @@ section,
 
 .tags-widget ul a span {
   padding-left: 5px;
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  color: color-mix(in srgb, black, transparent 60%);
   font-size: 14px;
 }
 
@@ -3041,7 +3045,7 @@ body {
 .hero {
   background-color: #282c34;
   padding: 40px;
-  color: white;
+  color: black;
 }
 
 .btn-watch-video {
@@ -3049,7 +3053,7 @@ body {
   display: flex;
   align-items: center;
   background-color: #22c8ff;
-  color: white;
+  color: black;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -3066,7 +3070,7 @@ body {
 
 .btn-get-started {
   background-color: #4CAF50;
-  color: white;
+  color: black;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
