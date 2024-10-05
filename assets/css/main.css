@@ -63,9 +63,9 @@
 --------------------------------------------------------------*/
 body {
   color: black;
-  background: url("../img/hero-bg.png") center center no-repeat;
-  background-size: cover; /* تجعل الصورة تغطي الخلفية بالكامل */
-  background-color: rgba(0, 0, 0, 0.5); /* أسود مع شفافية 50% */
+  /*background: url("../img/hero-bg.png") center center no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);*/
   padding: 60px 0;
   font-family: 'Cairo', sans-serif;
 }
@@ -3079,4 +3079,62 @@ body {
 
 .btn-get-started:hover {
   background-color: #45a049;
+}
+
+
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 36px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-icon:hover {
+  background-color: #22b35a;
+}
+
+
+.clients {
+    overflow: hidden; /* إخفاء التمرير الأفقي */
+    position: relative; /* لتحديد موضع العناصر داخل القسم */
+    background: #f9f9f9; /* لون الخلفية (اختياري) */
+    padding: 20px 0; /* حشوة إضافية (اختياري) */
+}
+
+.client-logos {
+    display: flex; /* استخدام Flexbox لتوزيع العناصر بشكل أفقي */
+    animation: scroll 20s linear infinite; /* إضافة الحركة */
+}
+
+.client-logo {
+    flex: 0 0 auto; /* تأكيد عدم تغيير حجم العناصر */
+    margin: 0 15px; /* هامش بين العناصر */
+}
+
+.client-logo img {
+   
+    height: auto; /* الحفاظ على النسبة الأصلية */
+    max-height: 100px; /* تعيين ارتفاع أقصى للحفاظ على النسبة */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* التحرك بالكامل إلى اليسار */
+    }
 }

@@ -212,3 +212,9 @@
 
 })();
 
+document.addEventListener('DOMContentLoaded', function() {
+  const clientLogos = document.querySelector('.client-logos');
+  
+  // تكرار الشريط لجعله متواصلًا
+  clientLogos.innerHTML += clientLogos.innerHTML;
+});
